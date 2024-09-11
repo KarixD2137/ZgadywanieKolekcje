@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -24,5 +27,35 @@ public class Main {
             // System.out.print(); - wypisywanie linii nie zakończonej enterem
             // System.out.println(); - wypisywanie linii zakończonej enterem
         }
+
+        // Kolekcje
+        /*
+        Kolekcje mogą mieć zmieniany rozmir (dodawanie i usuwanie elementów)
+        Kolekcje jako typy złożone (z dużej litery)
+        Rodzaje kolekcji:
+        - listy   List - interfejs, ArrayList LinkedList
+        - zbiory  Set - interfejs, HashSet
+        - mapy
+        */
+
+        // Przygotuj listę z liczbami wpisanymi z klawiatury
+        ArrayList<Integer> ListaLiczbZKlawiatury = new ArrayList<>();
+        // alt + Enter - importuje klasę
+
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Podaj 6 liczb");
+        for (int i = 0; i < 6; i++) {
+            int liczba = klawiatura.nextInt();
+            ListaLiczbZKlawiatury.add(liczba); // Dodawanie elementu do listy
+        }
+
+        // Wypisz listę
+        System.out.println("Wprowadzona tablica");
+        for (int i = 0; i < ListaLiczbZKlawiatury.size(); i++)
+        {
+            System.out.println(ListaLiczbZKlawiatury.get(i));
+        }
+        System.out.println("");
+        System.out.println(ListaLiczbZKlawiatury);
     }
 }

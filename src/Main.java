@@ -1,68 +1,17 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        // LOSOWANIE LICZB DO TABLICY 6 - ELEMENTOWEJ
-
-        /*
-        Tablica misi mieć zdefiniowany rozmiar, którego potem nie można zmieniać.
-        W Javie tablica może przechowywać typy proste i złożone.
-        */
-
-        int[] tablicaLiczbLosowych = new int[6];
-        for (int i = 0; i < tablicaLiczbLosowych.length; i++) {
-            tablicaLiczbLosowych[i] = (int) (Math.random()*10+1); // losowanie od 1 do 100
-        }
-
-        // WYPISYWANIE TABLICY NA EKRANIE
-        System.out.println("Wylosowana tablica: ");
-
-        // for(typ nazwa:nazwa_kolekcji)
-        for (int element:tablicaLiczbLosowych)
-        {
-            System.out.print(element+", ");
-            // System.out.print(); - wypisywanie linii nie zakończonej enterem
-            // System.out.println(); - wypisywanie linii zakończonej enterem
-        }
-
-        // KOLEKCJE
-        /*
-        Kolekcje mogą mieć zmieniany rozmir (dodawanie i usuwanie elementów)
-        Kolekcje jako typy złożone (z dużej litery)
-        Rodzaje kolekcji:
-        - listy   List - interfejs, ArrayList LinkedList
-        - zbiory  Set - interfejs, HashSet
-        - mapy
-        */
-
-        // PRZYGOTUJ LISTĘ Z LICZBAMI WPISANYMI Z KLAWIATURY
-        ArrayList<Integer> ListaLiczbZKlawiatury = new ArrayList<>();
-        // alt + Enter - importuje klasę
-
-        Scanner klawiatura = new Scanner(System.in);
-        System.out.println("Podaj 6 liczb");
-        for (int i = 0; i < 6; i++) {
-            int liczba = klawiatura.nextInt();
-            ListaLiczbZKlawiatury.add(liczba); // Dodawanie elementu do listy
-        }
-
-        // WYPISZ LISTĘ
-        System.out.println("Wprowadzona tablica");
-        for (int i = 0; i < ListaLiczbZKlawiatury.size(); i++)
-        {
-            System.out.println(ListaLiczbZKlawiatury.get(i));
-        }
-        System.out.println("");
-        System.out.println(ListaLiczbZKlawiatury);
-
-        // LOSOWANIE LISTY BEZ POWTÓRZEŃ
+    /**
+     * wylosujListę - losuje listę liczb całkowich z zakresu 1,100
+     * @param ileElementow liczba wylosowanych elementów
+     * @return ArrayListę z liczbami wylosowanymi
+     */
+    // LOSOWANIE DO LISTY
+    private static ArrayList<Integer> wylosujListe(int ileElementow)
+    {
         ArrayList<Integer> ListaLiczbWylosowanychBezPowtorzen = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < ileElementow; i++) {
             int liczba = (int)(Math.random()*10+1);
             while(ListaLiczbWylosowanychBezPowtorzen.contains(liczba))
             {
@@ -70,42 +19,66 @@ public class Main {
             }
             ListaLiczbWylosowanychBezPowtorzen.add(liczba);
         }
-        System.out.println("");
-        System.out.println("Lista bez powtórzeń");
-        System.out.println(ListaLiczbWylosowanychBezPowtorzen);
+        return ListaLiczbWylosowanychBezPowtorzen;
+    }
 
-        // LOSOWANIE DO ZBIORU
-        HashSet<Integer> zbiorLosowychBezPowtorzen = new HashSet<>();
-        while (zbiorLosowychBezPowtorzen.size()<6)
-        {
-            int liczba = (int)(Math.random()*100+1);
-            zbiorLosowychBezPowtorzen.add(liczba);
+
+    /**
+     * wypiszListe - wypisuje wszystkie elementy listy
+     * @param listaDoWypisania lista z liczbami do wypisania
+     */
+    // WYPISZ LISTĘ
+    private static void wypiszListe(List<Integer> listaDoWypisania) {
+        System.out.println("Wprowadzona tablica");
+        for (int i = 0; i < listaDoWypisania.size(); i++) {
+            System.out.println(listaDoWypisania.get(i));
         }
-        System.out.println("");
-        System.out.println("Zbiór losowych bez powtórzeń");
-        System.out.println(zbiorLosowychBezPowtorzen);
+    }
 
-        /*
-        Listy
-        uporządkowane, indeksowane. mogą powtarzać warości
+    /**
+     * wstawLiczbyDoListy - wstawia do listy liczby wpisane z klawiatury
+     * @param ileElementow określa ilośc elementów
+     * @return listę z elementami wylosowanymi z klawiatury
+     */
+    // PRZYGOTOWUJE LISTĘ Z LICZBAMI WPISANYMI Z KLAWIATURY
+    private static ArrayList<Integer> wstawLiczbyDoListy(int ileElementow){
+        ArrayList<Integer> ListaLiczbZKlawiatury = new ArrayList<>();
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Podaj " + ileElementow + " liczb");
+        for (int i = 0; i < ileElementow; i++) {
+            int liczba = klawiatura.nextInt();
+            ListaLiczbZKlawiatury.add(liczba); // Dodawanie elementu do listy
+        }
+        return ListaLiczbZKlawiatury;
+    }
 
-        Zbiory
-        zazwyczaj nieuporządkowane, nieindeksowane, bez powtózeń
-
-         */
-
-        // TRAFIONE
-
+    /**
+     * zwrocElemtyZObuList - Znajduje część wspólną dwóch zbiorów i ją wypisuje
+     * @param lista1
+     * @param lista2
+     * @return powatrzające się elementy
+     */
+    // TRAFIONE
+    private static LinkedList<Integer> zwrocElemtyZObuList(ArrayList<Integer> lista1, ArrayList<Integer> lista2)
+    {
         LinkedList<Integer> trafione = new LinkedList<>();
-        for (int i = 0; i < ListaLiczbZKlawiatury.size(); i++) {
-            if(ListaLiczbWylosowanychBezPowtorzen.contains(ListaLiczbZKlawiatury.get(i)))
+        for (int i = 0; i < lista1.size(); i++) {
+            if(lista2.contains(lista1.get(i)))
             {
-                trafione.add(ListaLiczbZKlawiatury.get(i));
+                trafione.add(lista1.get(i));
             }
         }
-        System.out.println("");
-        System.out.println("Trafione");
-        System.out.println(trafione);
+        return trafione;
+    }
 
+    public static void main(String[] args) {
+        ArrayList<Integer> liczbyWylosowane = wylosujListe(6);
+        ArrayList<Integer> liczbyKlawiatura = wstawLiczbyDoListy(6);
+
+        wypiszListe(liczbyWylosowane);
+        wypiszListe(liczbyKlawiatura);
+        LinkedList<Integer> trafioneLiczby = zwrocElemtyZObuList(liczbyWylosowane,liczbyKlawiatura);
+
+        System.out.println(trafioneLiczby);
     }
 }

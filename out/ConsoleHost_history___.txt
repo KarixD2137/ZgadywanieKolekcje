@@ -1,0 +1,40 @@
+git add .
+git commit -m "jebac fadka"
+git push
+git add .
+git commit -m "dziala"
+git push
+git add .
+git commit -m "gra w zgadywanie"
+git push
+git commit -m "gra w zgadywanie gra"
+git add .
+git commit -m "gra w zgadywanie gra"
+git push
+git init
+git add README.md
+git commit -m "first commit"
+git init
+git config --local user.name "Pawel-Wasilewski"
+git config --local user.email wasilewski.pawel2007@gmail.com
+git add .
+git commit -m "Rozpoczecie projektu"
+git branch -m main
+git remote add origin https://github.com/Pawel-Wasilewski/array_java.git
+git push
+git push -u origin main
+git add .
+git commit -m "losowanie liczb do arraya"
+git commit -m "wypisywanie liczb do arraya"
+git commit -m "Tworzenie ArrayList"
+git push
+git add .
+git commit -m "HashSet"
+git push
+git add .
+git commit -m "Totolotek przy uzyciu array"
+git push
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git add .

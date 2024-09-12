@@ -1,0 +1,233 @@
+git config --local user.name "wojownikgier" 
+git confik user.eamil kacperistelskixd@gmail.com
+git config user.email kacperistelskixd@gmail.com
+ git config user.email kacperistelskixd@gmail.com
+git config --local user.email kacperistelskixd@gmail.com
+git init
+git add .
+gir commit -m "pusty projekt"
+git commit -m "pusty projekt"
+git config --local user.name "kacperistelskixd@gmail.com"
+git config --local user.name "wojownikgier"
+git config --local user.email "kacperistelskixd@gmail.com"
+git remote add origin https://github.com/wojownikgier/loteria-zgadywanka.git
+git push -u origin master
+git add .
+git commit -m "pierwszy"
+git push -u origin master
+git commit -m "drugie"
+git add .
+git commit -m "druga pruba"
+git push -u origin master
+git commit -m "losowanie liczby rzeciwistej"
+git add.
+git add .
+git push -u origin master
+git add .
+git commit -m "trzecia pruba"
+git push -u origin master
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git add . 
+git commit -m "pusty projekt"
+git /?
+git
+git log
+git remote add origin https://github.com/KarixD2137/ZgadywanieLiczb.git
+git push -u origin master
+git add .
+git push -u origin master
+git add .
+git commit -m "dodatkowy komunikat"
+git push -u origin master
+git commit -m "losowanie liczby rzeczywistej"
+git add .
+git commit -m "losowanie liczby rzeczywistej"
+git push -u origin master
+git commit -m "losowanie liczby cakowitej"
+git add .
+git commit -m "losowanie liczby cakowitej"
+git push -u origin master
+git reset --hard HEAD^
+git commit -m "losowanie liczby calkowitej"
+git add .
+git commit -m "losowanie liczby calkowitej"
+git push -u origin master
+git reset 83f2534
+git git add .
+git add .
+git commit -m "dzien2"
+git push -u origin master
+git add . 
+git commit -m "dzien drugi int"
+git push -u origin master
+git add .
+git commit -m "wczytywanie z klawiatury "
+git push -u origin master
+git add. 
+git coomit -m "instrukcja waronkowa"
+gir push -u origin master
+git puch -u origin master
+git add .
+git commit -m "instrukcja warunkowa"
+git push -u origin master
+git add .
+git commit -m "cos tam"
+git push -u origin master
+git init 
+git config --local user.email wasilewski.pawel2007@gmail.com
+git config --local user.email "wasilewski.pawel2007@gmail.com"
+git config --local user.name "Pawel-Wasilewski"
+git add .
+git commit -m "first commit"
+git log
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git clone https://github.com/KarixD2137/ZgadywanieLiczb.git
+cd ..
+dir
+cd C:\Users\programista\IdeaProjects
+git clone https://github.com/KarixD2137/ZgadywanieLiczb.git
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git commit --m  "Wczytywanie liczb z klawiatury"
+git commit -m "Wczytywanie liczb z klawiatury"
+git add .
+git commit -m "Wczytywanie liczb z klawiatury"
+git log
+git remote add origin https://github.com/KarixD2137/ZgadywanieLiczb.git
+git push -u origin master
+git commit -m "wczytywanie liczb z klawiatury"
+git add .
+git commit -m "wczytywanie liczb z klawiatury"
+git push -u origin master
+git add .
+git commit -m "wczytywanie liczb z klawiatury"
+git push -u origin master
+git add .
+git commit -m "instrukcja warunkowa"
+git push -u origin master
+git commit -m "wyrazenie warunkowe"
+git add .
+git commit -m "wyrazenie warunkowe"
+git push -u origin master
+git commit -m "instrukcja switch i wyrazenie switch"
+git add .
+git commit -m "instrukcja switch i wyrazenie switch"
+git push -u origin master
+git commit -m "petla for"
+git add .
+git commit -m "petla for"
+git push -u origin master
+git commit -m "petla while"
+git add .
+git commit -m "petla while"
+git push -u origin master
+git add .
+git commit -m "do while"
+git push -u origin master
+ng g c baner
+cd C:\kl4ac\angular\projekt1
+ng generate component baner
+git init
+git --local user.email "wasilewski.pawel2007@gmail.com"
+git config --local user.email wasilewski.pawel2007@gmail.com
+git config --local user.name "Pawel-Wasilewski"
+git add .
+git commit -m "first commit"
+git log
+git status
+git remote add origin https://github.com/Pawel-Wasilewski/zgadywanka3p2_java.git
+git push -u origin master
+git commit -m "test123"
+git add .
+git commit -m "test123"
+git push -u origin master
+git add .
+git commit -m "zmiana w mainie"
+git push -u origin master
+git add .
+git commit -m "Losowanie liczb"
+git push -u origin master
+git commit -m "losowanie liczby calkowitej"
+git add .
+git commit -m "losowanie liczby calkowitej"
+git add .
+git commit -m "dodano zmienna klawiatura, oraz zczytywanie danych aka cin z cpp"
+git push
+git add .
+git commit -m "IF ELSE statement"
+git push
+git adsd .
+git add .
+git commit -m "wyrazenie warunkowe"
+git push
+git add .
+git commit -m "switch oraz dzielenie calkowite"
+git add .
+git commit -m "inny zapis switcha"
+git add .
+git commit -m "Petle for i while"
+git add .
+git commit -m "zmiana z whilem, okomentowanie fora i reszty kodu"
+git log
+git push
+git init
+git config --local user.name "Pawel-Wasilewski"
+git config --local user.email wasilewski.pawel2007@gmail.com
+git add .
+git commit -m "generator losowego hasla"
+git remote add origin https://github.com/Pawel-Wasilewski/zad83p2_java.git
+git push -u origin master
+git push
+git config --local user.emial "kacperistelskixd@gmail.com"
+git config --local user.name "wojownikgier"
+git commit -m "zgadywanka z tabliczami"
+git init 
+git add.
+git commit -m "zgadywanka z tabliczami" 
+git config --local user.name "wojownikgier"
+git config --local user.emial "kacperistelskixd@gmail.com"
+git remote add origin https://github.com/wojownikgier/zgadywankaztabliczami.git
+git commit -m "zgadywanka z tabliczami" 
+git init
+git config --local user.emial "kacperistelskixd@gmail.com"
+git config --local user.name "wojownikgier"
+git add .
+git commit -m "zgadywankas z tabliczami"
+git config --local user.email "kacperistelskixd@gmail.com"
+git config --local user.name "wojownikgier"
+git add .
+git commit -m "zgadywankas z tabliczami"
+git  branch -M main 
+git remote add origin https://github.com/wojownikgier/zgadywankaztabliczami.git
+git push -u origin main
+git add .
+git comit -m "losowe liczby do 100"
+git commit -m "losowe liczby do 100"
+git push
+git add . 
+git commit -m "losowe"
+git push
+git add . 
+git commit -m "totek"
+git push
+git add . 
+git commit -m "totek2"
+git push
+git add . 
+git commit -m "kopiowanie3"
+git push
+git add . 
+git commit -m "kopiowani43"
+git push
+cd Desktop
+git clone https://github.com/KarixD2137/ZgadywanieLiczb.git
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git remote add origin https://github.com/KarixD2137/ZgadywanieLiczb.git
+git log

@@ -1,0 +1,43 @@
+Albion Online 
+to sandbox MMORPG, 
+w którym to Ty piszesz własną historię, 
+zamiast podążać wytyczoną ścieżką. 
+Odkrywaj ogromny otwarty świat. 
+Wszystko, co robisz, wpływa na zależną od gracza ekonomię Albionu. 
+Każdy element ekwipunku jest tworzony przez graczy z surowców, które sami zbierają. 
+Twój ekwipunek decyduje o tym, kim jesteś. 
+Zamiana z rycerza na maga jest tak prosta, jak zmiana zbroi i broni. 
+Możesz też połączyć elementy obu klas.  
+Ruszaj w głąb lochów, gdzie znajdziesz zarówno bogactwo jak i zagrożenia. 
+Zrelaksuj się na własnej wyspie, na której możesz postawić dom, sadzić rośliny i hodować zwierzęta. 
+Chwyć za wędkę i ruszaj w kierunku jezior, rzek i oceanów Albionu.  
+Dołącz do gildii, graj z innymi! 
+Bierz udział w ogromnych bitwach PVP i zagarnij dla siebie kawałek świata! 
+To jest Albion Online.git remote add origin https://github.com/KarixD2137/ZgadywanieKolekcje.git
+git remote set-url origin https://github.com/KarixD2137/ZgadywanieKolekcje.git
+git init
+git add .
+git commit "pusty projekt"
+git init
+git config --local user.name "KarixD2137"
+git config --local user.email "karol.kopczynski7@gmail.com"
+git add .
+git add git commit -m "pusty projekt"
+git commit -m "pusty projekt"
+git remote add origin https://github.com/KarixD2137/ZgadywanieKolekcje.git
+git log
+git push
+git push -u origin master
+git add .
+git commit -m "Losowanie i wypisywanie z tablicy"
+git push -u origin master
+git add .
+git commit -m "Kolekcje"
+git push -u origin master
+git add .
+git commit -m "Trafione liczby"
+git push -u origin master
+git commit -m "Funkcje"
+git add .
+git commit -m "Funkcje"
+git push -u origin master
